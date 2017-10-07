@@ -15,13 +15,15 @@
  */
 // write your code here
 
+func continent(continentName: String, numberOfCountries: Int) {
+    print("\(continentName) is a continent which contains \(numberOfCountries) countries")
+}
 
-
-
+continent(continentName: "Asia", numberOfCountries: 20)
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
  */
-func greeting(name: String, greeting: String) {
+func greeting(name: String, _ greeting: String) {
     print("\(greeting), \(name)!")
 }
 
@@ -33,7 +35,7 @@ greeting(name: "Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
