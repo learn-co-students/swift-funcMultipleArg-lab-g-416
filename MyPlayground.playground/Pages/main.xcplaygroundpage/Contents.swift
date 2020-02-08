@@ -14,14 +14,16 @@
  ### 1. Create a function that will take in a continent and the number of countries in that continent. It should print the following sentence "____ is a continent which contains ___ countries".
  */
 // write your code here
-
+func presentation(continent: String, number:Int){
+    print("\(continent) is a continent which contains \(number) countries")
+}
 
 
 
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
  */
-func greeting(name: String, greeting: String) {
+func greeting(name: String, _ greeting: String) {
     print("\(greeting), \(name)!")
 }
 
@@ -33,7 +35,7 @@ greeting(name: "Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
@@ -48,8 +50,10 @@ daysInMonth(month: "November", days: 30)
 // write your code here
 
 
-
-
+func myFunc(_ beverage: String, _ number: Int, _ place: String){
+    print("\(number) bottles of \(beverage) on the \(place) wall.")
+}
+myFunc("wine", 3, "counter")
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
  */
